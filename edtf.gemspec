@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('racc', ['~>1.4'])
   s.add_development_dependency('cucumber', ['~>1.0'])
   s.add_development_dependency('rspec', ['~>2.6'])
-  s.add_development_dependency('ZenTest', ['~>4.6'])
+  s.add_development_dependency('ZenTest', ['4.8.3']) # dodging zentest bug #28
 
   s.files        = `git ls-files`.split("\n") << 'lib/edtf/parser.rb'
   s.test_files   = `git ls-files -- {test,spec,features}/*`.split("\n")
